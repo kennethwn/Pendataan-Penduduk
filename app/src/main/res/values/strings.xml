@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pendataan Penduduk</string>
+
+    <!-- Login -->
+    <string name="title">Hello again!</string>
+    <string name="desc">Welcome back, you\'ve been missed!</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

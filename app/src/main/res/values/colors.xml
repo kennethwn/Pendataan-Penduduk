@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tint">#F1F6F9</color>
+    <color name="dark_grey">#394867</color>
+    <color name="dark_blue">#212A3E</color>
+    <color name="grey">#9BA4B5</color>
+    <color name="black">#20262E</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="peach">#FF6D60</color>
+    <color name="blue">#19A7CE</color>
+</resources>

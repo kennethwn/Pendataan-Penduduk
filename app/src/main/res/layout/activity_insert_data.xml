@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tint"
+    tools:context=".InsertDataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_insert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="Data Section"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="bold"></TextView>
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="35dp"
+                android:inputType="text"
+                android:background="@drawable/custom_input_field"
+                android:hint="Name"
+                android:textStyle="italic"
+                android:padding="16dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="35dp"
+                android:inputType="text"
+                android:background="@drawable/custom_input_field"
+                android:hint="Address"
+                android:textStyle="italic"
+                android:padding="16dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:inputType="text"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input_field"
+                android:hint="City"
+                android:textStyle="italic"
+                android:padding="16dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="35dp"
+                android:inputType="number"
+                android:background="@drawable/custom_input_field"
+                android:hint="Age"
+                android:textStyle="italic"
+                android:padding="16dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input_field"
+                android:hint="Job"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textStyle="italic">
+            </EditText>
+
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input_field"
+                android:hint="Salary"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textStyle="italic">
+            </EditText>
+
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input_field"
+                android:hint="Status"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textStyle="italic">
+            </EditText>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp">
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_background"
+                    android:contentDescription="clear text"
+                    android:drawableTop="@drawable/ic_baseline_restore_from_trash_24"
+                    android:drawablePadding="-24dp"
+                    android:padding="16dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></Button>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_btn_blue"
+                    android:padding="16dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grid"
+                    app:layout_constraintBottom_toBottomOf="@+id/grid"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/btn_clear"
+                    tools:layout_editor_absoluteY="0dp"></Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
